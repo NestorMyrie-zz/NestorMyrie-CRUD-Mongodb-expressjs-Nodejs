@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+animation: b 12s  infinite;
+}
+
+@keyframes b{
+    0%{
+        background: -webkit-linear-gradient(to right, #93291E, #161616);  
+       
+    }
+    
+    100%{
+        background: -webkit-linear-gradient(to right, #93291E, #c93243)
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+.container> form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+.container > h1{
+    text-align: center;
+    margin-bottom: 1vh;
+}
+.container> form input{
+    height: 3vh;
+    width: 20%;
+ outline: none;
+ border: 2px solid rgb(255, 255, 255);
+ border-radius: 3px;
+ margin: 1px;
+ color: black;
+ text-align: center;
+}
+.container form input::placeholder{
+    text-align: center;
+}
+.container button{
+    height:3.5vh;
+    color: red;
+    background:white;
+    border: none;
+    font-size: 1em;
+    padding: 0px 1em;
+    cursor: pointer;
+}
+.userslist{
+    width: 50vw;
+    margin-top: 5vh;
+}
+.userslist >h1{
+    text-align: center;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px dashed white;
+    padding: 1vh;
+
+}
+.far, .fas{
+    cursor:pointer;
+}
+
+.list input, .list a{
+    width: 25%;
+    text-align: center;
+    margin: 0px 1vw;
+}
+
+.list input:disabled, .list input{
+    border: none;
+    background: transparent;
+    font-weight: bold;
+}
+
+.list input{
+  border-bottom: 2px solid white;
+  outline: none;
+ 
+}
+.fa-save{
+    display: None;
+}
+.rowinfo{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rowinfo p{
+    margin: 0 11px;
+    width: 50%;
+    text-align: center;
+display: block;border-bottom:2px solid white
+}
